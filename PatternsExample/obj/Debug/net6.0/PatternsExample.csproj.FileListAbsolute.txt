@@ -13,3 +13,5 @@
 /Users/dmytro.rastoropov/Projects/Patterns/PatternsExample/PatternsExample/obj/Debug/net6.0/PatternsExample.pdb
 /Users/dmytro.rastoropov/Projects/Patterns/PatternsExample/PatternsExample/obj/Debug/net6.0/PatternsExample.genruntimeconfig.cache
 /Users/dmytro.rastoropov/Projects/Patterns/PatternsExample/PatternsExample/obj/Debug/net6.0/ref/PatternsExample.dll
+/Users/dmytro.rastoropov/Projects/Patterns/PatternsExample/PatternsExample/bin/Debug/net6.0/Newtonsoft.Json.dll
+/Users/dmytro.rastoropov/Projects/Patterns/PatternsExample/PatternsExample/obj/Debug/net6.0/PatternsExample.csproj.CopyComplete
