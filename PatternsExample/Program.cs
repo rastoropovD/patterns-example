@@ -5,6 +5,7 @@ using PatternsExample.Builder.VehicleBuilderExample;
 using PatternsExample.BusinessLogic.Documents;
 using PatternsExample.ChainOfResponsibility.ApprovalExample;
 using PatternsExample.ChainOfResponsibility.BasicExample;
+using PatternsExample.Mediator;
 
 Console.WriteLine("Hello, World!");
 
@@ -111,19 +112,36 @@ Console.WriteLine("Hello, World!");
 
 #endregion
 
-
 #region Randomizer
-
-int[] studentNumbers = {3, 7, 8, 9, 10, 11, 13, 14};
-
-Random rnd = new Random(Guid.NewGuid().ToString().GetHashCode());
-
-int index = rnd.Next(0, studentNumbers.Length);
-int studentNumber = studentNumbers[index];
-
-Console.WriteLine($"studentNumber = {studentNumber}");
+//
+// int[] studentNumbers = {};
+//
+// Random rnd = new Random(Guid.NewGuid().ToString().GetHashCode());
+//
+// int index = rnd.Next(0, studentNumbers.Length);
+// int studentNumber = studentNumbers[index];
+//
+// Console.WriteLine($"studentNumber = {studentNumber}");
 
 #endregion
 
+
+#region Mediator
+
+Participant Mike = new Participant("Mike");
+Participant Bob = new Participant("Bob");
+Participant Alex = new Participant("Alex");
+
+IChatMediator mediator = new ChatMediator();
+
+mediator.Register(Mike);
+mediator.Register(Bob);
+mediator.Register(Alex);
+
+mediator.Send("Bob", "Mike", "some message");
+mediator.Send("Mike", "Alex", "Hello!");
+
+
+#endregion
 
 Console.Read();
